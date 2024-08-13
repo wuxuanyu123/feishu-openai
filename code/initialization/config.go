@@ -75,7 +75,7 @@ func LoadConfig(cfg string) *Config {
 		OpenaiApiKeys:              getViperStringArray("OPENAI_KEY", []string{""}),
 		OpenaiModel:                getViperStringValue("OPENAI_MODEL", "gpt-4o-2024-08-06"),
 		OpenAIHttpClientTimeOut:    getViperIntValue("OPENAI_HTTP_CLIENT_TIMEOUT", 550),
-		OpenaiMaxTokens:            getViperIntValue("OPENAI_MAX_TOKENS", 2000),
+		OpenaiMaxTokens:            getViperIntValue("OPENAI_MAX_TOKENS", 4096),
 		HttpPort:                   getViperIntValue("HTTP_PORT", 9000),
 		HttpsPort:                  getViperIntValue("HTTPS_PORT", 9001),
 		UseHttps:                   getViperBoolValue("USE_HTTPS", false),
